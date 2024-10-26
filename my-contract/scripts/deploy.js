@@ -6,7 +6,7 @@ async function main() {
     const Contract = await ethers.getContractFactory("TestingContract");
     
     // Deploy the contract
-    const contract = await Contract.deploy();
+    const contract = await Contract.deploy(); //pass metamask address in parameter
 
     // Wait for the deployment to finish
     await contract.deployed();
